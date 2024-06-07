@@ -1,0 +1,9 @@
+
+const verifyuser= async(req,res,next)=>{
+    const token= req.cookie.token;
+    if(!token){
+        return res.json({message:"no token",status:false})
+    }
+    const decoded=await jwt.verify(token,process.env.SECRET_KEY)
+    next()
+}

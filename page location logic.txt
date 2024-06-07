@@ -1,0 +1,1 @@
+ {location.pathname !== "/profile" && <img className="burger" src={menuimg} alt="Menu" />}

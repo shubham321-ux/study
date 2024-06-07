@@ -1,0 +1,37 @@
+const [timeday, setTimeday] = useState('00')
+    const [timehour, setTimehour] = useState('00')
+    const [timemin, setTimemin] = useState('00')
+    const [timesec, setTimesec] = useState('00')
+
+    let interval = useRef()
+    const starttimer = () => {
+        const contdowndate = new Date('April 30,2024 00:00:00')
+
+        interval = setInterval(() => {
+            const now = new Date()
+            const distance = contdowndate - now
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24))
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60)))
+            const minutes = Math.floor((distance % (1000 * 60 * 60 )) / (1000 * 60))
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000)
+
+            if (distance < 0) {
+                clearInterval(interval.current)
+            } else {
+                setTimeday(days)
+                setTimehour(hours)
+                setTimemin(minutes)
+                setTimesec(seconds)
+            }
+
+
+
+        }, 1000)
+    }
+    useEffect(() => {
+        starttimer();
+        return () => {
+            clearInterval(interval.current)
+        }
+    })

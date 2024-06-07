@@ -1,0 +1,35 @@
+<?php get_header();?>
+        <!-- Page content-->
+       <!-- 404 page -->
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+         
+      </head>
+      <body>
+        <div class="error-main">
+          <div class="undder-error-main">
+          <div class="image-div">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/illustration.png" alt="Image 2">
+</div>
+
+<div class="oops-page-not-found">
+        Oops Page Not Found
+</div>
+
+
+<p class="text-wrapper">Ut consequat ac tortor eu vehicula. Aenean accumsan purus eros. Maecenas sagittis tortor at metus mollis</p>
+
+<button class="button"><div class="button-text">BACk to HOME</div></button>
+          </div>
+
+        </div>
+      </body>
+      </html>
+
+        
+<?php get_footer();?>

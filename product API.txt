@@ -1,0 +1,17 @@
+API key:3297d8aee8505a512586a73d076b5485
+secert key:fa5147c88397f9a907cc48b139e08224
+
+token :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
+
+name:quickstart-05b15475.myshopify.com
+
+https://apikey:apitoken@name/admin/api/2024-04/product.json
+
+https://3297d8aee8505a512586a73d076b5485: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@quickstart-05b15475.myshopify.com/admin/api/2014-04/products.json
+
+https://d65d1df194e634f8c4fa9d4db6aff340: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@quickstart-05b15475.myshopify.com/admin/api/2024-04/products.json
+
+
+
+https://d65d1df194e634f8c4fa9d4db6aff340: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@quickstart-05b15475.myshopify.com/admin/api/2024-04/products/images.json
+

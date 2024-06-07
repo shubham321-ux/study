@@ -1,0 +1,38 @@
+import React, { useState } from 'react';
+import './styles.css'; // Import your CSS file with styles
+
+function App() {
+  const [activeButton, setActiveButton] = useState(null);
+
+  const handleButtonClick = (index) => {
+    setActiveButton(index);
+  };
+
+  return (
+    <div className="btn-div">
+      {[...Array(4)].map((_, index) => (
+        <button
+          key={index}
+          className={`add ${activeButton === index ? 'active' : ''}`}
+          onClick={() => handleButtonClick(index)}
+        >
+          Newest games
+        </button>
+      ))}
+    </div>
+  );
+}
+
+export default App;
+
+
+css
+
+.add {
+  /* Your default button styles */
+}
+
+.active {
+  background-color: red;
+}
+
